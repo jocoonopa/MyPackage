@@ -1,0 +1,29 @@
+{
+    "name": "jocoonopa/mypackage",
+    "description": "Learn how to build a Laravel package",
+    "type": "laravel",
+    "authors": [
+        {
+            "name": "jocoonopa",
+            "email": "jocoonopa@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "psr-4": {
+            "jocoonopa\\MyPackage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "jocoonopa\\MyPackage\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    }
+}
